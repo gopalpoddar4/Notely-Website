@@ -1,0 +1,251 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text for contrast */
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #FFAD00, #FF8C00); /* Gradient background */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5em;
+    font-weight: bold;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.6em;
+    font-weight: 300;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Version Number Styles */
+.version {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    background-color: #FFAD00; /* Orange background */
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Screenshot Section Styles */
+.screenshots {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.screenshots h2 {
+    font-size: 2.5em;
+    color: #FFAD00;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.screenshot-container {
+    width: 100%;
+    overflow-x: auto; /* Horizontal scroll */
+    padding-bottom: 20px; /* Space for scrollbar */
+}
+
+.screenshot-grid {
+    display: flex;
+    gap: 20px; /* Spacing between screenshots */
+    padding: 20px 10px;
+}
+
+.screenshot {
+    width: 300px; /* Fixed width for each screenshot */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.screenshot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Hide scrollbar for a cleaner look (optional) */
+.screenshot-container::-webkit-scrollbar {
+    display: none;
+}
+
+.screenshot-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Features Section Styles */
+.features {
+    margin-bottom: 60px;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    color: #FFAD00;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.features h2::after, .download h2::after, .screenshots h2::after{
+    content:'';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ffad00;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Spacing between items */
+    
+}
+
+.features ul li {
+    background-color: #ffffff;
+    border: 1px solid #FFAD00;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Download Section Styles */
+.download {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.download h2 {
+    font-size: 2.5em;
+    color: #FFAD00;
+    margin-bottom: 30px;
+}
+
+.download p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    color: #555555;
+}
+
+button {
+    background-color: #FFAD00;
+    color: white;
+    border: none;
+    padding: 18px 36px;
+    font-size: 1.3em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+button:hover {
+    background-color: #e69500;
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .features ul {
+        grid-template-columns: repeat(2, 1fr); /* Mobile par bhi 2 columns */
+        gap: 10px; /* Smaller gap for mobile */
+    }
+
+    .features ul li {
+        padding: 15px; /* Smaller padding for mobile */
+        font-size: 0.9em; /* Smaller text for mobile */
+    }
+}
