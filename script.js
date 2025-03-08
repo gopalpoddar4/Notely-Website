@@ -1,4 +1,14 @@
 document.getElementById('downloadBtn').addEventListener('click', function() {
-    alert('Download link will be available soon!');
-    // Yahan aap download link ya logic add kar sakte hain
+    // APK file ka direct download link yahan daalein
+    const apkDownloadLink = 'https://drive.google.com/uc?export=download&id=1UdS_pve-RC9bjzN2I3OxNUTRrz-SqGe-';
+    
+    // Hidden anchor tag create karein
+    const link = document.createElement('a');
+    link.href = apkDownloadLink;
+    link.download = 'NotelyApp.apk'; // APK file ka naam
+    document.body.appendChild(link);
+    link.click(); // Automatically click karein
+    document.body.removeChild(link); // Anchor tag ko remove karein
 });
+
+//https://drive.google.com/file/d//view?usp=drivesdk
