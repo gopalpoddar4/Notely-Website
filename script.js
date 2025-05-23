@@ -1,6 +1,6 @@
 document.getElementById('downloadBtn').addEventListener('click', function() {
     // APK file ka direct download link yahan daalein
-    const apkDownloadLink = 'https://www.mediafire.com/file/luvigyxpfiullxv/Notely.apk/file';
+    const apkDownloadLink = 'https://www.mediafire.com/file/bfvakm3edxmf00u/Notely%2528V16%2529.apk/file';
     
     // Hidden anchor tag create karein
     const link = document.createElement('a');
