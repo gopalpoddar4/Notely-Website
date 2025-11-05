@@ -1,65 +1,153 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notely - Your Note-Taking App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notely — Your Note-Taking App</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="Notely — lightweight and secure note-taking app. Fast notes, pin important entries, search & dark/light themes. Built by Gopal Poddar." />
+  <meta name="keywords" content="Notely, note taking app, Android notes, Gopal Poddar, Kotlin notes app, Notely APK" />
+  <meta name="author" content="Gopal Poddar" />
+  <link rel="canonical" href="https://gopalpoddar4.github.io/Notely-Website/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Notely — Your Note-Taking App" />
+  <meta property="og:description" content="Fast, secure and minimal note-taking app with dark & light themes. Built by Gopal Poddar." />
+  <meta property="og:image" content="https://gopalpoddar4.github.io/Notely-Website/ScreenShot/stagerd_light.jpg" />
+  <meta property="og:url" content="https://gopalpoddar4.github.io/Notely-Website/" />
+  <meta property="og:type" content="software" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Notely — Your Note-Taking App" />
+  <meta name="twitter:description" content="Fast, secure and minimal note-taking app with dark & light themes." />
+  <meta name="twitter:image" content="https://gopalpoddar4.github.io/Notely-Website/ScreenShot/stagerd_light.jpg" />
+
+  <!-- Favicon (if you have one) -->
+  <link rel="icon" href="ScreenShot/stagerd_light.jpg" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Notely",
+    "operatingSystem": "ANDROID",
+    "applicationCategory": "BusinessApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "url": "https://gopalpoddar4.github.io/Notely-Website/",
+    "author": {
+      "@type": "Person",
+      "name": "Gopal Poddar"
+    },
+    "description": "Notely — lightweight note-taking app with dark & light themes, quick search, and secure note locking.",
+    "screenshot": [
+      "https://gopalpoddar4.github.io/Notely-Website/ScreenShot/stagerd_light.jpg",
+      "https://gopalpoddar4.github.io/Notely-Website/ScreenShot/stagerd_dark.jpg"
+    ]
+  }
+  </script>
 </head>
 <body>
-    <header>
-        <h1>Notely</h1>
-        <p>Your Ultimate Note-Taking Solution</p>
-        <p class="version">Version 17.0</p> <!-- Version number -->
-    </header>
-    <main>
-        <!-- Download Section -->
-        <section class="download">
-            <h2>Download Now</h2>
-            <p>Get started with Notely today!</p>
-            <button id="downloadBtn">Download App</button>
-        </section>
 
-          <!-- Screenshot Section -->
-       <section class="screenshots">
-        <h2>App Preview</h2>
-        <div class="screenshot-container">
-            <div class="screenshot-grid"> 
-                <img src="ScreenShot/stagerd_light.jpg" alt="Notely App Screenshot 1" class="screenshot">
-                <img src="ScreenShot/stagerd_dark.jpg" alt="Notely App Screenshot 2" class="screenshot"> 
-                <img src="ScreenShot/linear_light.jpg" alt="Notely App Screenshot 3" class="screenshot">
-                <img src="ScreenShot/linear_dark.jpg" alt="Notely App Screenshot 4" class="screenshot">
-                <img src="ScreenShot/add_light.jpg" alt="Notely App Screenshot 5" class="screenshot">
-                <img src="ScreenShot/add_dark.jpg" alt="Notely App Screenshot 6" class="screenshot">
-                <img src="ScreenShot/option_light.jpg" alt="Notely App Screenshot 7" class="screenshot">
-                <img src="ScreenShot/option_dark.jpg" alt="Notely App Screenshot 8" class="screenshot">
-                <img src="ScreenShot/setting_light.jpg" alt="Notely App Screenshot 9" class="screenshot">
-                <img src="ScreenShot/setting_dark.jpg" alt="Notely App Screenshot 10" class="screenshot">
-                <img src="ScreenShot/delete_light.jpg" alt="Notely App Screenshot 11" class="screenshot">
-                <img src="ScreenShot/delete_dark.jpg" alt="Notely App Screenshot 12" class="screenshot">
-                <img src="ScreenShot/delete_animation_light.jpg" alt="Notely App Screenshot 13" class="screenshot">
-                <img src="ScreenShot/delete_animation_dark.jpg" alt="Notely App Screenshot 14" class="screenshot">
-            </div>
-        </div>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Notely</h1>
+        <p class="tagline">Your Ultimate Note-Taking Solution</p>
+      </div>
+
+      <nav class="nav">
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-list">
+          <li><a href="#download">Download</a></li>
+          <li><a href="#screenshots">Preview</a></li>
+          <li><a href="#features">Features</a></li>
+        </ul>
+      </nav>
+
+      <div class="version">Version <strong>17.0</strong></div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Download -->
+    <section id="download" class="download container">
+      <h2>Download Notely</h2>
+      <p class="lead">Get Notely on your Android device — fast, offline-friendly, and secure.</p>
+      <!-- Replace href and data-download with your APK URL if available -->
+      <a id="downloadLink" class="btn-primary" href="https://gopalpoddar4.github.io/Notely-Website/" target="_blank" rel="noopener" data-download="https://gopalpoddar4.github.io/Notely-Website/">Download App</a>
+      <p class="small-note">If the download doesn't start, visit the link above or open on mobile.</p>
     </section>
-        <!-- Features Section -->
-        <section class="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Easy Note Creation</li>
-                <li>Secure Note Locking</li>
-                <li>Quick Search</li>
-                <li>Organized Layout</li>
-                <li>Multipal Backgroung</li>
-                <li>Atractive UI</li>
-                <li>Pin Important Notes</li>
-                <li>Dark & Light Mood</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Notely. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+
+    <!-- Screenshots -->
+    <section id="screenshots" class="screenshots container">
+      <h2>App Preview</h2>
+      <div class="screenshot-container" aria-label="Notely screenshots">
+        <div class="screenshot-grid">
+          <!-- make sure these image paths exist exactly as provided -->
+          <img src="ScreenShot/stagerd_light.jpg" alt="Notely Screenshot 1" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/stagerd_dark.jpg" alt="Notely Screenshot 2" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/linear_light.jpg" alt="Notely Screenshot 3" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/linear_dark.jpg" alt="Notely Screenshot 4" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/add_light.jpg" alt="Notely Screenshot 5" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/add_dark.jpg" alt="Notely Screenshot 6" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/option_light.jpg" alt="Notely Screenshot 7" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/option_dark.jpg" alt="Notely Screenshot 8" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/setting_light.jpg" alt="Notely Screenshot 9" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/setting_dark.jpg" alt="Notely Screenshot 10" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/delete_light.jpg" alt="Notely Screenshot 11" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/delete_dark.jpg" alt="Notely Screenshot 12" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/delete_animation_light.jpg" alt="Notely Screenshot 13" class="screenshot" tabindex="0" />
+          <img src="ScreenShot/delete_animation_dark.jpg" alt="Notely Screenshot 14" class="screenshot" tabindex="0" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features container">
+      <h2>Features</h2>
+      <ul class="feature-list">
+        <li>Easy Note Creation</li>
+        <li>Secure Note Locking</li>
+        <li>Quick Search</li>
+        <li>Organized Layout</li>
+        <li>Multiple Backgrounds</li>
+        <li>Attractive UI</li>
+        <li>Pin Important Notes</li>
+        <li>Dark & Light Mode</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Modal for screenshot preview -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <button class="modal-close" aria-label="Close preview">&times;</button>
+    <img class="modal-image" src="" alt="Screenshot preview" />
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Notely — Built by <strong>Gopal Poddar</strong></p>
+      <p class="small-muted">For APK & support visit: <a href="https://gopalpoddar4.github.io/Notely-Website/" target="_blank" rel="noopener">Notely Website</a></p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>
